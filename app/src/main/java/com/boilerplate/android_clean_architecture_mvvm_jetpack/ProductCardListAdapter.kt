@@ -18,7 +18,13 @@ class ProductCardListAdapter : RecyclerView.Adapter<ProductCardListAdapter.ViewH
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind()
+        holder.bind(
+            ProductCardViewState(
+                "Playstation",
+                "This is a nice console! Check it out",
+                "200US$"
+            )
+        )
     }
 
     override fun getItemCount(): Int {
@@ -26,11 +32,14 @@ class ProductCardListAdapter : RecyclerView.Adapter<ProductCardListAdapter.ViewH
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bind() {
+        fun bind(productCardViewState: ProductCardViewState) {
             val bind = ProductCardBinding.bind(itemView)
-            bind.viewProductName.text = "Product 1"
+            /*bind.viewProductName.text = "Product 1"
             bind.viewProductDescription.text = "Description of product"
-            bind.productPrice.text = "100 US$"
+            bind.productPrice.text = "100 US$"*/
+            bind.viewProductName.text = productCardViewState.title
+            bind.viewProductDescription.text = productCardViewState.description
+            bind.productPrice.text = productCardViewState.price
         }
     }
 
