@@ -13,3 +13,4 @@ All notable changes to this project will be documented in this file.
 - added product card adapter and it's functionality
 - feat: using the view state to populate the item in the recycler view
 - feat: add CHANGELOG.md
+- feat: update README.md
