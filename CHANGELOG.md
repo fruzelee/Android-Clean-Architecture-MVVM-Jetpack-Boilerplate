@@ -15,3 +15,8 @@ All notable changes to this project will be documented in this file.
 - feat: add CHANGELOG.md
 - feat: update README.md
 - feat: add product list view state
+- feat: remove hard coded view state from the adapter and put it in the activity for now
+- feat: hard coding the data in the activity for now
+the right way to do it is to use view models which we will implement later insha allah
+- BREAKING CHANGE: cover view state which help a lot to build UIs. 
+They are responsive and they are always consistent in between states.
