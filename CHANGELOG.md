@@ -20,3 +20,4 @@ All notable changes to this project will be documented in this file.
 the right way to do it is to use view models which we will implement later insha allah
 - BREAKING CHANGE: cover view state which help a lot to build UIs
 they are responsive and they are always consistent in between states
+- feat: import dependencies for the view model and the live data 
