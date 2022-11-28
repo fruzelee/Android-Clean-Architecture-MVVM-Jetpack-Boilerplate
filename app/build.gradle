@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace 'com.boilerplate.android_clean_architecture_mvvm_jetpack'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.boilerplate.android_clean_architecture_mvvm_jetpack"
