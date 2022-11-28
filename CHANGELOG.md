@@ -22,3 +22,5 @@ the right way to do it is to use view models which we will implement later insha
 they are responsive and they are always consistent in between states
 - chore(deps): add dependencies for the view model and the live data
 - chore(deps): bump core-ktx from 1.7.0 to 1.9.0
+- chore: update targetSdkVersion from 32 to 33
+- chore: set compileSdkVersion from 32 to 33
