@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId "com.boilerplate.android_clean_architecture_mvvm_jetpack"
         minSdk 21
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
