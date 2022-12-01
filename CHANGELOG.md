@@ -30,3 +30,4 @@ All notable changes to this project will be documented in this file.
 - BREAKING CHANGE: cover the view model and live data
   later, we will cover asynchronous operations and coroutines, in-sha-Allah.
 - docs: update changelog with recent changes
+- docs: update readme file
