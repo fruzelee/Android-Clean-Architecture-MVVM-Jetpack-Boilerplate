@@ -27,7 +27,8 @@ All notable changes to this project will be documented in this file.
 - docs: update changelog
 - feat: add a view model for our product list
 - feat: the fragment is using live data to access the view states
-- BREAKING CHANGE: cover the view model and live data
+- BREAKING CHANGE: cover the lifecycle artifacts including view model and live data
   later, we will cover asynchronous operations and coroutines, in-sha-Allah.
 - docs: update changelog with recent changes
 - docs: update readme file
+- docs: add progress summary on readme
