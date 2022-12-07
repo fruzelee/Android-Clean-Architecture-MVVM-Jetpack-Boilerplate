@@ -12,13 +12,14 @@
 
 # Completed
 - view states
-
-# Last Update
 - lifecycle artifacts:
 - view model
 - live data
 
-# Ongoing:
+# Last Update
 - asynchronous operations
 - coroutines
 - dispatchers threads
+
+# Ongoing:
+- HTTP client
