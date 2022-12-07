@@ -1,23 +1,23 @@
-# Android Clean Architecture: MVVM, Jetpack components + Kotlin
+## Android Clean Architecture: MVVM, Jetpack components + Kotlin
 
-# features:
-- Learn MVVM architecture, proposed architecture by Google to build clean and testable codebase.
+# Features:
+- MVVM architecture, proposed architecture by Google to build clean and testable codebase.
 - Get to know the market good practices, the best practices tech industries are using now-a-days.
 - Understand the Design Principles, be able to use and implement the SOLID principles.
 - Jetpack components, Live Data, Room, Navigation Components and more.
 - Write tests. Writing unit tests and handling async operations.
 
-# progress summary:
+# Progress Summary:
 
-# completed
+# Completed
 - view states
 
-# last update
+# Last Update
 - lifecycle artifacts:
 - view model
 - live data
 
-# on going:
+# Ongoing:
 - asynchronous operations
 - coroutines
 - dispatchers threads
