@@ -1,5 +1,5 @@
-# <div align="center">Android Clean Architecture:</div>
-## <div align="center"> MVVM, Jetpack components, Kotlin</div>
+# <div align="center">**Android Clean Architecture**</div>
+## <div align="center">*MVVM, Jetpack components, Kotlin*</div>
 
 # Features:
 - MVVM architecture, proposed architecture by Google to build clean and testable codebase.
