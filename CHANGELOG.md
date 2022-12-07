@@ -32,3 +32,8 @@ All notable changes to this project will be documented in this file.
 - docs: update changelog with recent changes
 - docs: update readme file
 - docs: add progress summary on readme
+- feat: add product repository
+- feat: implement coroutines with mock data
+- fix: product list mock data not showing issue
+- docs: update readme file
+- docs: update changelog
