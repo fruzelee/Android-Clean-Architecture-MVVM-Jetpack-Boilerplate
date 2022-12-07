@@ -21,6 +21,9 @@ class MainActivity : AppCompatActivity() {
         binding.viewProductList.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         binding.viewProductList.adapter = adapter
+
+        // initially using dummy data on the main thread
+
         /*updateUI(ProductListViewState.Content((1..3).map {
             ProductCardViewState(
                 "Playstation $it",
@@ -28,6 +31,8 @@ class MainActivity : AppCompatActivity() {
                 "200US$"
             )
         }))*/
+
+        // using observable pattern to update the ui
         viewModel.viewState.observe(this) { viewState ->
             updateUI(viewState)
         }
@@ -37,6 +42,7 @@ class MainActivity : AppCompatActivity() {
     private fun updateUI(viewState: ProductListViewState) {
         when (viewState) {
             is ProductListViewState.Content -> {
+                binding.viewProductList.isVisible = true
                 binding.errorView.isVisible = false
                 binding.loadingView.isVisible = false
                 adapter.setData(viewState.productList)
