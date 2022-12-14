@@ -11,6 +11,9 @@
 # Progress Summary:
 
 # Completed
+- view boilerplate
+- adapter boilerplate
+- view binding
 - view states
 - lifecycle artifacts:
 - view model
@@ -23,3 +26,5 @@
 
 # Ongoing:
 - HTTP client
+- product service boilerplate
+- product entity boilerplate
