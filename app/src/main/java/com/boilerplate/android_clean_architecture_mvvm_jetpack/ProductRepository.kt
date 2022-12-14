@@ -19,7 +19,13 @@ class ProductRepository {
             }*/
 
             //get a reference to our client instead of returning mock data
-            client.getProductList()
+            client.getProductList().map {
+                ProductCardViewState(
+                    it.title,
+                    it.description,
+                    "TK ${it.price}"
+                )
+            }
         }
     }
 }
