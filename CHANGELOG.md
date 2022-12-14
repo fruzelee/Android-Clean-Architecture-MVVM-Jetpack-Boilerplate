@@ -27,8 +27,8 @@ All notable changes to this project will be documented in this file.
 - docs: update changelog
 - feat: add a view model for our product list
 - feat: the fragment is using live data to access the view states
-- BREAKING CHANGE: cover the lifecycle artifacts including view model and live data
-  later, we will cover asynchronous operations and coroutines, in-sha-Allah.
+- BREAKING CHANGE: cover the lifecycle artifacts including view model and live data later, we will
+  cover asynchronous operations and coroutines, in-sha-Allah.
 - docs: update changelog with recent changes
 - docs: update readme file
 - docs: add progress summary on readme
@@ -37,3 +37,17 @@ All notable changes to this project will be documented in this file.
 - fix: product list mock data not showing issue
 - docs: update readme file
 - docs: update changelog
+- chore: add necessary dependencies for http client
+- docs: update progress summary on readme file
+- feat: add product service class to fetch the list of products
+- feat: add product entity class to represent the product which is going to be used by the
+  repository layer and the view state is going to use by the view layer, the ui layer
+- feat: add a new api client which is going to be responsible for returning the client that we need
+  to actually do the requests
+- feat: add retrofit builder which will be responsible for creating an implementation for our
+  service
+- feat: get a reference to our client on product repository instead of returning mock data
+- feat: map the product entity into a product card view state to resolve the error on product
+  repository
+- refactor: reformat the product card view state data class
+- docs: update changelog with recent changes
