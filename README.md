@@ -18,13 +18,14 @@
 - lifecycle artifacts:
 - view model
 - live data
-
-# Last Update
 - asynchronous operations
 - coroutines
 - dispatchers threads
 
-# Ongoing:
+# Last Update
 - HTTP client
 - product service boilerplate
 - product entity boilerplate
+
+# Ongoing:
+- glide module
