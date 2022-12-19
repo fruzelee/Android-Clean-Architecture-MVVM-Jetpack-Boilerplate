@@ -23,7 +23,8 @@ class ProductRepository {
                 ProductCardViewState(
                     it.title,
                     it.description,
-                    "TK ${it.price}"
+                    "TK ${it.price * 100}",
+                    it.imageUrl
                 )
             }
         }
