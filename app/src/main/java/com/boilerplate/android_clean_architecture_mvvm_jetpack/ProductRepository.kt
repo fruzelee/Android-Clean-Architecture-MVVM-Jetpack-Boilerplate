@@ -23,7 +23,7 @@ class ProductRepository {
                 ProductCardViewState(
                     it.title,
                     it.description,
-                    "TK ${it.price * 100}",
+                    "TK ${it.price * 104.59}", //1 US Dollar = 104.59 Taka Dec 19, 2:01AM UTC
                     it.imageUrl
                 )
             }
