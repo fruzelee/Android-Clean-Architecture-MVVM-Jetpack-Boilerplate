@@ -51,3 +51,12 @@ All notable changes to this project will be documented in this file.
   repository
 - refactor: reformat the product card view state data class
 - docs: update changelog with recent changes
+- docs: update the progress summary in the readme file
+- chore: add the necessary dependencies for the glide module
+- feat: add new parameter imageUrl for ProductCardViewState data class
+- feat: update ProductCardViewState mapping on ProductRepository
+- feat: showing product image via glide on ProductCardListAdapter
+- fix: resolve missing @Url parameter for method ProductService.getProductList
+- feat: add necessary uses-permissions into the manifest
+- feat: update the price value on product repository mapping
+- docs: update changelog with recent changes
