@@ -5,6 +5,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.boilerplate.android_clean_architecture_mvvm_jetpack.databinding.ProductCardBinding
+import com.bumptech.glide.Glide
+import com.bumptech.glide.request.target.BitmapImageViewTarget
 
 class ProductCardListAdapter : RecyclerView.Adapter<ProductCardListAdapter.ViewHolder>() {
 
@@ -41,13 +43,24 @@ class ProductCardListAdapter : RecyclerView.Adapter<ProductCardListAdapter.ViewH
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(productCardViewState: ProductCardViewState) {
+
             val bind = ProductCardBinding.bind(itemView)
+
+            //assign dummy data
             /*bind.viewProductName.text = "Product 1"
             bind.viewProductDescription.text = "Description of product"
             bind.productPrice.text = "100 US$"*/
+
+            //assign data via view state
             bind.viewProductName.text = productCardViewState.title
             bind.viewProductDescription.text = productCardViewState.description
             bind.productPrice.text = productCardViewState.price
+
+            //showing product image via glide
+            Glide.with(bind.productImage)
+                .asBitmap()
+                .load(productCardViewState.imageUrl)
+                .into(BitmapImageViewTarget(bind.productImage))
         }
     }
 
