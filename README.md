@@ -21,11 +21,12 @@
 - asynchronous operations
 - coroutines
 - dispatchers threads
-
-# Last Update
 - HTTP client
 - product service boilerplate
 - product entity boilerplate
 
-# Ongoing:
+# Last Update
 - glide module
+
+# Ongoing:
+- solid principles
