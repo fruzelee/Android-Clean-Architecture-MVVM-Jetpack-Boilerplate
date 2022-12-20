@@ -24,9 +24,10 @@
 - HTTP client
 - product service boilerplate
 - product entity boilerplate
-
-# Last Update
 - glide module
 
-# Ongoing:
+# Last Update
 - solid principles
+
+# Ongoing:
+- Dependency injection (DI) with Hilt
