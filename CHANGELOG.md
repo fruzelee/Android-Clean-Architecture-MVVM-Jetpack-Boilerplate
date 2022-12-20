@@ -52,6 +52,7 @@ All notable changes to this project will be documented in this file.
 - refactor: reformat the product card view state data class
 - docs: update changelog with recent changes
 - docs: update the progress summary in the readme file
+- 
 - chore: add the necessary dependencies for the glide module
 - feat: add new parameter imageUrl for ProductCardViewState data class
 - feat: update ProductCardViewState mapping on ProductRepository
@@ -59,4 +60,13 @@ All notable changes to this project will be documented in this file.
 - fix: resolve missing @Url parameter for method ProductService.getProductList
 - feat: add necessary uses-permissions into the manifest
 - feat: update the price value on product repository mapping
+- docs: update changelog with recent changes
+- 
+- docs: update the progress summary in the readme file
+- fix: create an interface & make sure that our view model is using interface rather than concrete
+  class to comply with the DIP of SOLID principles
+- feat: implements an interface on ProductRepositoryAPI class and override the method
+- feat: instead of relying in the concrete class, i relying the interface in our view model
+- feat: view model is depending on abstraction instead of concretions
+- feat: view model is depending in interface which is implemented by ProductRepositoryAPI
 - docs: update changelog with recent changes
