@@ -2,10 +2,10 @@ package com.boilerplate.android_clean_architecture_mvvm_jetpack
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import javax.inject.Inject
 
-class ProductRepositoryAPI: ProductRepository {
-
-    private val client = ApiClient().getClient()
+class ProductRepositoryAPI @Inject constructor(private val service: ProductService) :
+    ProductRepository {
 
     override suspend fun getProductList(): List<ProductCardViewState> {
         return withContext(Dispatchers.IO) {
@@ -19,7 +19,7 @@ class ProductRepositoryAPI: ProductRepository {
             }*/
 
             //get a reference to our client instead of returning mock data
-            client.getProductList().map {
+            service.getProductList().map {
                 ProductCardViewState(
                     it.title,
                     it.description,
