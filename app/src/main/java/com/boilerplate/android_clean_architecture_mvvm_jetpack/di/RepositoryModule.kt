@@ -6,8 +6,10 @@ import com.boilerplate.android_clean_architecture_mvvm_jetpack.ProductRepository
 import com.boilerplate.android_clean_architecture_mvvm_jetpack.ProductService
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
 
 @Module
+@InstallIn()
 class RepositoryModule {
 
     @Provides
