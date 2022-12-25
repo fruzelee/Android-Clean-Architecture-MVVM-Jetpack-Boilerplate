@@ -71,12 +71,16 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
     // Navigation Component
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
 
     // Hilt: Hilt provides a standard way to incorporate Dagger dependency injection into an Android application.
-    implementation 'com.google.dagger:hilt-android:2.44.2'
-    kapt 'com.google.dagger:hilt-compiler:2.44.2'
+    implementation("com.google.dagger:hilt-android:2.44.2")
+    kapt("com.google.dagger:hilt-compiler:2.44.2")
+    // Android Navigation Fragment Hilt Extension
+    // https://mvnrepository.com/artifact/androidx.hilt/hilt-navigation-fragment
+    implementation("androidx.hilt:hilt-navigation-fragment:1.0.0")
+
 }
 
 kapt {
