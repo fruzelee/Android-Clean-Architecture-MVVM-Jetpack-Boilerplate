@@ -7,9 +7,10 @@ import com.boilerplate.android_clean_architecture_mvvm_jetpack.ProductService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 
 @Module
-@InstallIn()
+@InstallIn(SingletonComponent::class)
 class RepositoryModule {
 
     @Provides
