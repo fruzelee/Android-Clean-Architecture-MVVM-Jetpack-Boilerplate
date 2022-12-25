@@ -5,9 +5,10 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-
-class ProductListViewModel(private val repository: ProductRepository) : ViewModel() {
+class ProductListViewModel @Inject constructor(private val repository: ProductRepository) :
+    ViewModel() {
 
     private val _viewState = MutableLiveData<ProductListViewState>()
     val viewState: LiveData<ProductListViewState> get() = _viewState
