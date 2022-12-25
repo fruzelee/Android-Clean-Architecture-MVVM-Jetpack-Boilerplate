@@ -25,9 +25,11 @@
 - product service boilerplate
 - product entity boilerplate
 - glide module
+- solid principles (DIP)
 
 # Last Update
-- solid principles
+- dependency injection (DI) with hilt
 
 # Ongoing:
-- Dependency injection (DI) with Hilt
+- product list module
+- product details module
