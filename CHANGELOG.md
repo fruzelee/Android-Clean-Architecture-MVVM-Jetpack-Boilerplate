@@ -70,3 +70,23 @@ All notable changes to this project will be documented in this file.
 - feat: view model is depending on abstraction instead of concretions
 - feat: view model is depending in interface which is implemented by ProductRepositoryAPI
 - docs: update changelog with recent changes
+- 
+- docs: update the progress summary in the readme file
+- chore: import hilt dependencies which provides a standard way to incorporate Dagger dependency
+  injection into an Android application
+- feat: add new AppApplication class and implement the application class on it, basically the
+  application is going to be used to tell hilt to start generating code for us
+- feat: instead of creating the dependency inside of the class, are pass as a constructor according
+  to the dependency injection principles
+- feat: add new RepositoryModule class where hilt provide dependencies for us
+- fix: used another annotation called @InstallIn to define the visibility or the scope for those
+  dependencies where those dependencies going to be available
+- feat: use SingletonComponent as we want all those dependencies to be a singleton because we don't
+  need more than one instance of those
+- feat: to make sure that those dependencies can be crated by hilt, we have use another annotation
+  called inject. we have also have to use a constructor
+- feat: use @HiltViewModel annotations for the view models
+- feat: use our application in our android manifest otherwise our application won't work
+- feat: ApiClient services use as companion object
+- docs: update changelog with recent changes
+
