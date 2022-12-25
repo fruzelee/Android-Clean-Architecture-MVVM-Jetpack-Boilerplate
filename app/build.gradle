@@ -62,13 +62,17 @@ dependencies {
     // Lifecycles only (without ViewModel or LiveData)
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
 
+    // Glide: An image loading and caching library for Android focused on smooth scrolling
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
-    // Glide: An image loading and caching library for Android focused on smooth scrolling
-    implementation 'com.github.bumptech.glide:glide:4.14.2'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    // Navigation Component
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
 
     // Hilt: Hilt provides a standard way to incorporate Dagger dependency injection into an Android application.
     implementation 'com.google.dagger:hilt-android:2.44.2'
