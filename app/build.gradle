@@ -49,6 +49,9 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
+    // Kotlin extensions for 'fragment' artifact
+    implementation 'androidx.fragment:fragment-ktx:1.5.5'
+
     // lifecycle owner
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
