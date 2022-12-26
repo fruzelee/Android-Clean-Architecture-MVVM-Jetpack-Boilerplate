@@ -26,10 +26,11 @@
 - product entity boilerplate
 - glide module
 - solid principles (DIP)
-
-# Last Update
 - dependency injection (DI) with hilt
 
-# Ongoing:
+# Last Update
 - product list module
+
+# Ongoing:
+- navigation component
 - product details module
