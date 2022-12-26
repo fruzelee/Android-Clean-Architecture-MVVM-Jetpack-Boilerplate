@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.boilerplate.android_clean_architecture_mvvm_jetpack.view.ProductListFragment"
+        android:label="ProductListFragment">
+
+    </fragment>
+
+</navigation>
