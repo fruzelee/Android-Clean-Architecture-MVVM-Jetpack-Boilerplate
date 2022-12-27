@@ -65,7 +65,7 @@ dependencies {
 
     // Glide: An image loading and caching library for Android focused on smooth scrolling
     implementation 'com.github.bumptech.glide:glide:4.14.2'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    kapt 'com.github.bumptech.glide:compiler:4.14.2'
 
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
