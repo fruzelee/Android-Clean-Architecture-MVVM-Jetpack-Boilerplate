@@ -9,4 +9,9 @@
 
     </fragment>
 
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.boilerplate.android_clean_architecture_mvvm_jetpack.view.ProductDetailsFragment"
+        android:label="ProductDetailsFragment" />
+
 </navigation>
