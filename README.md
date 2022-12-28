@@ -32,5 +32,6 @@
 - product list module
 
 # Ongoing:
-- navigation component
 - product details module
+- navigation component
+- navigation safeargs
