@@ -27,11 +27,12 @@
 - glide module
 - solid principles (DIP)
 - dependency injection (DI) with hilt
-
-# Last Update
 - product list module
 
-# Ongoing:
+# Last Update
 - product details module
 - navigation component
 - navigation safeargs
+
+# Ongoing:
+- organizing the codebase
