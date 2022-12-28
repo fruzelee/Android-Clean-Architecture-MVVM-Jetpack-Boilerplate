@@ -118,3 +118,4 @@ All notable changes to this project will be documented in this file.
 - BREAKING CHANGE: add new module product details
 - feat: update .gitignore
 - docs: update changelog with recent changes
+- feat: update strings
