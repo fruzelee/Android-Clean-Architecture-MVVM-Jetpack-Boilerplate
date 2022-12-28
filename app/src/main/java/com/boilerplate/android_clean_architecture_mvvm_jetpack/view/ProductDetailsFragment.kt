@@ -28,7 +28,7 @@ class ProductDetailsFragment : Fragment() {
             viewFullDescription.text =
                 "Locally sourced. Few foods are as cool as a cucumber. While most people think of cucumbers as vegetables, they are actually a fruit. Cucumbers are naturally low in calories, carbohydrates, sodium, fat and cholesterol & hydrating properties."
             Glide.with(requireContext())
-                .load("https://picsum.photos/200/300")
+                .load("https://picsum.photos/200")
                 .into(viewProductImage)
         }
     }
