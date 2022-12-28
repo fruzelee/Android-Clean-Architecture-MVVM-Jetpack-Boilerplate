@@ -3,7 +3,9 @@ package com.boilerplate.android_clean_architecture_mvvm_jetpack
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.boilerplate.android_clean_architecture_mvvm_jetpack.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
