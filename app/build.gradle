@@ -55,13 +55,18 @@ dependencies {
 
     // lifecycle owner
     // ViewModel
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
 
     // LiveData
-    // implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    //implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
 
     // Lifecycles only (without ViewModel or LiveData)
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version")
+
+    // Annotation processor
+    //kapt("androidx.lifecycle:lifecycle-compiler:$lifecycle_version")
+    // alternately - if using Java8, use the following instead of lifecycle-compiler
+    implementation("androidx.lifecycle:lifecycle-common-java8:$lifecycle_version")
 
     // Glide: An image loading and caching library for Android focused on smooth scrolling
     implementation 'com.github.bumptech.glide:glide:4.14.2'
