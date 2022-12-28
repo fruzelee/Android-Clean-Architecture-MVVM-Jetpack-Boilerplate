@@ -7,8 +7,10 @@ import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.boilerplate.android_clean_architecture_mvvm_jetpack.ProductCardListAdapter
+import com.boilerplate.android_clean_architecture_mvvm_jetpack.ProductCardViewState
 import com.boilerplate.android_clean_architecture_mvvm_jetpack.ProductListViewModel
 import com.boilerplate.android_clean_architecture_mvvm_jetpack.ProductListViewState
 import com.boilerplate.android_clean_architecture_mvvm_jetpack.databinding.FragmentProductListBinding
@@ -19,7 +21,7 @@ class ProductListFragment : Fragment() {
 
     private lateinit var binding: FragmentProductListBinding
     private val viewModel: ProductListViewModel by viewModels()
-    private val adapter = ProductCardListAdapter()
+    private val adapter = ProductCardListAdapter(::onItemClicked)
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -62,5 +64,9 @@ class ProductListFragment : Fragment() {
                 binding.loadingView.isVisible = true
             }
         }
+    }
+
+    private fun onItemClicked(viewState: ProductCardViewState) {
+        findNavController().navigate(ProductListFragmentDirections.actionProductListFragmentToProductDetailsFragment())
     }
 }
