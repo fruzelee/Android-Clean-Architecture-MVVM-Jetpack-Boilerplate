@@ -69,3 +69,5 @@ class ProductCardListAdapter(val onItemClicked: (ProductCardViewState) -> Unit) 
     }
 
 }
+
+
