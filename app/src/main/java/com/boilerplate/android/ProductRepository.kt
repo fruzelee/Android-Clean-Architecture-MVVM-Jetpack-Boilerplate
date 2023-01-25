@@ -1,4 +1,4 @@
-package com.boilerplate.android_clean_architecture_mvvm_jetpack
+package com.boilerplate.android
 
 interface ProductRepository {
     suspend fun getProductList(): List<ProductCardViewState>

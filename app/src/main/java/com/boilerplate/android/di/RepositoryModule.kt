@@ -1,9 +1,9 @@
-package com.boilerplate.android_clean_architecture_mvvm_jetpack.di
+package com.boilerplate.android.di
 
-import com.boilerplate.android_clean_architecture_mvvm_jetpack.ApiClient
-import com.boilerplate.android_clean_architecture_mvvm_jetpack.ProductRepository
-import com.boilerplate.android_clean_architecture_mvvm_jetpack.ProductRepositoryAPI
-import com.boilerplate.android_clean_architecture_mvvm_jetpack.ProductService
+import com.boilerplate.android.ApiClient
+import com.boilerplate.android.ProductRepository
+import com.boilerplate.android.ProductRepositoryAPI
+import com.boilerplate.android.ProductService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,4 +1,4 @@
-package com.boilerplate.android_clean_architecture_mvvm_jetpack
+package com.boilerplate.android
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -20,7 +20,7 @@ class ExampleInstrumentedTest {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals(
-            "com.boilerplate.android_clean_architecture_mvvm_jetpack",
+            "com.boilerplate.android",
             appContext.packageName
         )
     }

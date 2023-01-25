@@ -1,4 +1,4 @@
-package com.boilerplate.android_clean_architecture_mvvm_jetpack.view
+package com.boilerplate.android.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,11 +9,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.boilerplate.android_clean_architecture_mvvm_jetpack.ProductCardListAdapter
-import com.boilerplate.android_clean_architecture_mvvm_jetpack.ProductCardViewState
-import com.boilerplate.android_clean_architecture_mvvm_jetpack.ProductListViewModel
-import com.boilerplate.android_clean_architecture_mvvm_jetpack.ProductListViewState
-import com.boilerplate.android_clean_architecture_mvvm_jetpack.databinding.FragmentProductListBinding
+import com.boilerplate.android.ProductCardListAdapter
+import com.boilerplate.android.ProductCardViewState
+import com.boilerplate.android.ProductListViewModel
+import com.boilerplate.android.ProductListViewState
+import com.boilerplate.android.databinding.FragmentProductListBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

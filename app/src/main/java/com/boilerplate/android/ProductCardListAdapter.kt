@@ -1,10 +1,10 @@
-package com.boilerplate.android_clean_architecture_mvvm_jetpack
+package com.boilerplate.android
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.boilerplate.android_clean_architecture_mvvm_jetpack.databinding.ProductCardBinding
+import com.boilerplate.android.databinding.ProductCardBinding
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.BitmapImageViewTarget
 

@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace 'com.boilerplate.android_clean_architecture_mvvm_jetpack'
+    namespace 'com.boilerplate.android'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.boilerplate.android_clean_architecture_mvvm_jetpack"
+        applicationId "com.boilerplate.android"
         minSdk 21
         targetSdk 33
         versionCode 1

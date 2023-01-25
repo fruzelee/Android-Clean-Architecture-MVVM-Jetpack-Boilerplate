@@ -1,11 +1,11 @@
-package com.boilerplate.android_clean_architecture_mvvm_jetpack.view
+package com.boilerplate.android.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.boilerplate.android_clean_architecture_mvvm_jetpack.databinding.FragmentProductDetailsBinding
+import com.boilerplate.android.databinding.FragmentProductDetailsBinding
 import com.bumptech.glide.Glide
 
 class ProductDetailsFragment : Fragment() {

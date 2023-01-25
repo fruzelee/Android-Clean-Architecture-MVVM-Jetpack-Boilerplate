@@ -1,4 +1,4 @@
-package com.boilerplate.android_clean_architecture_mvvm_jetpack
+package com.boilerplate.android
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
