@@ -10,7 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.boilerplate.android.ProductCardListAdapter
-import com.boilerplate.android.ProductCardViewState
+import com.boilerplate.android.product_list.business.ProductCardViewState
 import com.boilerplate.android.ProductListViewModel
 import com.boilerplate.android.ProductListViewState
 import com.boilerplate.android.databinding.FragmentProductListBinding
