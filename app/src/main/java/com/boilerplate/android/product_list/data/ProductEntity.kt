@@ -1,4 +1,4 @@
-package com.boilerplate.android
+package com.boilerplate.android.product_list.data
 
 data class ProductEntity(
     val title: String,
