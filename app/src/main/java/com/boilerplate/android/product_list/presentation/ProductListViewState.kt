@@ -1,4 +1,4 @@
-package com.boilerplate.android
+package com.boilerplate.android.product_list.presentation
 
 import com.boilerplate.android.product_list.business.ProductCardViewState
 
