@@ -21,7 +21,14 @@ class ProductListViewModel @Inject constructor(private val repository: ProductRe
             _viewState.postValue(ProductListViewState.Loading)
             // Data call to fetch products
             val productList = repository.getProductList()
-            _viewState.postValue(ProductListViewState.Content(productList))
+            _viewState.postValue(ProductListViewState.Content(productList.map {
+                ProductCardViewState(
+                    it.title,
+                    it.description,
+                    "TK ${it.price}",
+                    it.imageUrl
+                )
+            }))
 
             /*_viewState.postValue(ProductListViewState.Content((1..3).map {
                 ProductCardViewState(

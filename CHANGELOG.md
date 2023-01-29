@@ -52,7 +52,7 @@ All notable changes to this project will be documented in this file.
 - refactor: reformat the product card view state data class
 - docs: update changelog with recent changes
 - docs: update the progress summary in the readme file
-- 
+-
 - chore: add the necessary dependencies for the glide module
 - feat: add new parameter imageUrl for ProductCardViewState data class
 - feat: update ProductCardViewState mapping on ProductRepository
@@ -61,7 +61,7 @@ All notable changes to this project will be documented in this file.
 - feat: add necessary uses-permissions into the manifest
 - feat: update the price value on product repository mapping
 - docs: update changelog with recent changes
-- 
+-
 - docs: update the progress summary in the readme file
 - fix: create an interface & make sure that our view model is using interface rather than concrete
   class to comply with the DIP of SOLID principles
@@ -70,7 +70,7 @@ All notable changes to this project will be documented in this file.
 - feat: view model is depending on abstraction instead of concretions
 - feat: view model is depending in interface which is implemented by ProductRepositoryAPI
 - docs: update changelog with recent changes
-- 
+-
 - docs: update the progress summary in the readme file
 - chore: import hilt dependencies which provides a standard way to incorporate Dagger dependency
   injection into an Android application
@@ -89,14 +89,14 @@ All notable changes to this project will be documented in this file.
 - feat: use our application in our android manifest otherwise our application won't work
 - feat: ApiClient services use as companion object
 - docs: update changelog with recent changes
-- 
+-
 - docs: update the progress summary in the readme file
 - chore(gradle): add kotlin extensions for 'fragment' artifact
 - chore(gradle): add kotlin extensions for 'Navigation Component' artifact
 - chore(gradle): add kotlin extensions for Android Navigation Fragment Hilt Extension
 - feat: add new product list module
 - BREAKING CHANGE: add new module product list
-- 
+-
 - docs: update the progress summary in the readme file
 - feat: add nav_graph under navigation
 - feat: add FragmentContainerView on main activity layout
@@ -119,7 +119,7 @@ All notable changes to this project will be documented in this file.
 - feat: update .gitignore
 - docs: update changelog with recent changes
 - feat: update strings
-- 
+-
 - docs: update the progress summary in the readme file
 - chore: upgrade AGP dependency from 7.3.1 to 7.4.0
 - chore: upgrade Gradle version to 7.5
@@ -145,3 +145,5 @@ All notable changes to this project will be documented in this file.
 - feat: add new data class Product under business layer of 'product_list' feature
 - refactor: replace ProductCardViewState by Product on ProductRepository
 - refactor: replace ProductCardViewState by Product on ProductRepositoryAPI
+- feat: map the productList to support ProductCardViewState on ProductListViewModel
+- feat: enhance ProductListViewModel to support ProductCardViewState through mapping of productList
