@@ -1,4 +1,4 @@
-package com.boilerplate.android.view
+package com.boilerplate.android.product_list.presentation
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,9 +11,9 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.boilerplate.android.ProductCardListAdapter
 import com.boilerplate.android.product_list.business.ProductCardViewState
-import com.boilerplate.android.product_list.presentation.ProductListViewModel
 import com.boilerplate.android.ProductListViewState
 import com.boilerplate.android.databinding.FragmentProductListBinding
+import com.boilerplate.android.view.ProductListFragmentDirections
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
