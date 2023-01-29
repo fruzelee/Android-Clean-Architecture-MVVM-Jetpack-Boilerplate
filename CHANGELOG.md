@@ -143,3 +143,4 @@ All notable changes to this project will be documented in this file.
 - refactor: move ProductCardViewState to presentation layer in 'product_list' feature for better
   organization and maintainability
 - feat: add new data class Product under business layer of 'product_list' feature
+- feat: replace ProductCardViewState by Product on ProductRepository
