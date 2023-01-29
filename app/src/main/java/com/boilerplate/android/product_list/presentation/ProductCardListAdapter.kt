@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.boilerplate.android.R
 import com.boilerplate.android.databinding.ProductCardBinding
-import com.boilerplate.android.product_list.business.ProductCardViewState
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.BitmapImageViewTarget
 

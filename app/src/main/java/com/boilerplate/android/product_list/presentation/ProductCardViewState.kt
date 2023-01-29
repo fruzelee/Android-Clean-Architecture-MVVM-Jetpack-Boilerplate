@@ -1,4 +1,4 @@
-package com.boilerplate.android.product_list.business
+package com.boilerplate.android.product_list.presentation
 
 data class ProductCardViewState(
     val title: String,

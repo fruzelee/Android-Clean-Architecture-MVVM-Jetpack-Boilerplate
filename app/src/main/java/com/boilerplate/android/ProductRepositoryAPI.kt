@@ -1,6 +1,6 @@
 package com.boilerplate.android
 
-import com.boilerplate.android.product_list.business.ProductCardViewState
+import com.boilerplate.android.product_list.presentation.ProductCardViewState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

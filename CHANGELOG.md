@@ -140,3 +140,5 @@ All notable changes to this project will be documented in this file.
   organization and maintainability
 - refactor: move ProductListViewState to presentation layer in 'product_list' feature for better
   organization and maintainability
+- refactor: move ProductCardViewState to presentation layer in 'product_list' feature for better
+  organization and maintainability
