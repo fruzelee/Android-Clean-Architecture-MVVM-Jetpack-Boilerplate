@@ -136,3 +136,5 @@ All notable changes to this project will be documented in this file.
 - doc: update CHANGELOG.md
 - refactor: move ProductListFragment to presentation layer in 'product_list' feature for better
   organization and maintainability
+- refactor: move ProductCardListAdapter to presentation layer in 'product_list' feature for better
+  organization and maintainability
