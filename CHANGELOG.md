@@ -119,3 +119,18 @@ All notable changes to this project will be documented in this file.
 - feat: update .gitignore
 - docs: update changelog with recent changes
 - feat: update strings
+- 
+- docs: update the progress summary in the readme file
+- chore: upgrade AGP dependency from 7.3.1 to 7.4.0
+- chore: upgrade Gradle version to 7.5
+- BREAKING CHANGE: to take advantage of the latest features, improvements, and security fixes,
+  upgrade the Android Gradle Plugin
+- feat: update .gitignore
+- feat: update the package namespace
+- refactor: move ProductEntity to the data layer within the "product_list" feature for improved
+  organization and maintainability
+- refactor: move ProductCardViewState to the business layer in the "product_list" feature for better
+  organization and maintainability
+- refactor: move ProductListViewModel to presentation layer in "product_list" feature for better
+  organization and maintainability
+- doc: update CHANGELOG.md
