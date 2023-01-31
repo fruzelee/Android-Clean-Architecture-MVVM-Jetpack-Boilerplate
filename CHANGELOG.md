@@ -135,7 +135,7 @@ All notable changes to this project will be documented in this file.
 - feat(business): add new data class Product under business layer of "product_list" feature
 - refactor(repository): replace ProductCardViewState by Product on ProductRepository and
   ProductRepositoryAPI
-- feat(viewmodel): map productList to support ProductCardViewState on ProductListViewModel and
+- feat(view-model): map productList to support ProductCardViewState on ProductListViewModel and
   enhance to support it through mapping of productList
 - doc: update CHANGELOG.md
 -
@@ -144,3 +144,4 @@ All notable changes to this project will be documented in this file.
 - feat(ProductDetails): add ProductDetails data class under business layer
 - feat(ProductDetails): add ProductDetailsEntity data class under data layer
 - feat(ProductDetails): add ProductDetailsViewState class under presentation layer
+- feat(ProductDetails): add ProductDetailsViewModel class under presentation layer
