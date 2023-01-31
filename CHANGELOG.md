@@ -143,3 +143,4 @@ All notable changes to this project will be documented in this file.
   and maintainability
 - feat(ProductDetails): add ProductDetails data class under business layer
 - feat(ProductDetails): add ProductDetailsEntity data class under data layer
+- feat(ProductDetails): add ProductDetailsViewState class under presentation layer
