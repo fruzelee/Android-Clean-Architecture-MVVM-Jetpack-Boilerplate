@@ -120,30 +120,22 @@ All notable changes to this project will be documented in this file.
 - docs: update changelog with recent changes
 - feat: update strings
 -
-- docs: update the progress summary in the readme file
-- chore: upgrade AGP dependency from 7.3.1 to 7.4.0
-- chore: upgrade Gradle version to 7.5
-- BREAKING CHANGE: to take advantage of the latest features, improvements, and security fixes,
-  upgrade the Android Gradle Plugin
-- feat: update .gitignore
-- feat: update the package namespace
-- refactor: move ProductEntity to the data layer within the "product_list" feature for improved
+- docs: update the progress summary in the README file
+- Chore: Upgrade AGP dependency from 7.3.1 to 7.4.0, Gradle version to 7.5
+- BREAKING CHANGE: upgrade the Android Gradle Plugin to take advantage of latest features,
+  improvements, and security fixes
+- feat: update .gitignore and package namespace
+- refactor(data): move ProductEntity to data layer within "product_list" feature for improved
   organization and maintainability
-- refactor: move ProductCardViewState to the business layer in the "product_list" feature for better
-  organization and maintainability
-- refactor: move ProductListViewModel to presentation layer in "product_list" feature for better
-  organization and maintainability
+- refactor(business): move ProductCardViewState to business layer in "product_list" feature for
+  better organization and maintainability
+- refactor(presentation): move ProductListViewModel, ProductListFragment, ProductCardListAdapter,
+  ProductListViewState, and ProductCardViewState to presentation layer in "product_list" feature for
+  better organization and maintainability
+- feat(business): add new data class Product under business layer of "product_list" feature
+- refactor(repository): replace ProductCardViewState by Product on ProductRepository and
+  ProductRepositoryAPI
+- feat(viewmodel): map productList to support ProductCardViewState on ProductListViewModel and
+  enhance to support it through mapping of productList
 - doc: update CHANGELOG.md
-- refactor: move ProductListFragment to presentation layer in 'product_list' feature for better
-  organization and maintainability
-- refactor: move ProductCardListAdapter to presentation layer in 'product_list' feature for better
-  organization and maintainability
-- refactor: move ProductListViewState to presentation layer in 'product_list' feature for better
-  organization and maintainability
-- refactor: move ProductCardViewState to presentation layer in 'product_list' feature for better
-  organization and maintainability
-- feat: add new data class Product under business layer of 'product_list' feature
-- refactor: replace ProductCardViewState by Product on ProductRepository
-- refactor: replace ProductCardViewState by Product on ProductRepositoryAPI
-- feat: map the productList to support ProductCardViewState on ProductListViewModel
-- feat: enhance ProductListViewModel to support ProductCardViewState through mapping of productList
+-
