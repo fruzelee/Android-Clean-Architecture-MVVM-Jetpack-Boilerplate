@@ -15,7 +15,7 @@
 
     <fragment
         android:id="@+id/productDetailsFragment"
-        android:name="com.boilerplate.android.view.ProductDetailsFragment"
+        android:name="com.boilerplate.android.product_details.presentation.ProductDetailsFragment"
         android:label="ProductDetailsFragment" />
 
 </navigation>

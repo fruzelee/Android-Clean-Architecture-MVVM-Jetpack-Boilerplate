@@ -1,4 +1,4 @@
-package com.boilerplate.android.view
+package com.boilerplate.android.product_details.presentation
 
 import android.os.Bundle
 import android.view.LayoutInflater

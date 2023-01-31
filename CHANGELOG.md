@@ -139,3 +139,5 @@ All notable changes to this project will be documented in this file.
   enhance to support it through mapping of productList
 - doc: update CHANGELOG.md
 -
+- feat(ProductDetails): move ProductDetailsFragment to presentation layer for better organization
+  and maintainability
