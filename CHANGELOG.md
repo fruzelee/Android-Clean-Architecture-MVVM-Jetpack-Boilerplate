@@ -149,3 +149,4 @@ All notable changes to this project will be documented in this file.
 - fix: resolve type mismatch on ProductDetailsViewState
 - feat(ProductService): add getProductDetails service
 - feat(ProductRepositoryAPI): add getProductDetails function to retrieve ProductDetails
+- feat(fragment_product_details): add ProgressBar to display loading view
