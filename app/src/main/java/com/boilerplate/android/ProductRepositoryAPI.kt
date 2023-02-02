@@ -1,5 +1,6 @@
 package com.boilerplate.android
 
+import com.boilerplate.android.product_details.business.ProductDetails
 import com.boilerplate.android.product_list.business.Product
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -27,6 +28,22 @@ class ProductRepositoryAPI @Inject constructor(private val service: ProductServi
 //                    "TK ${it.price * 104.59}", //1 US Dollar = 104.59 Taka Dec 19, 2:01AM UTC
                     it.price * 104.59, //1 US Dollar = 104.59 Taka Dec 19, 2:01AM UTC
                     it.imageUrl
+                )
+            }
+        }
+    }
+
+    override suspend fun getProductDetails(productId: String): ProductDetails {
+        return withContext(Dispatchers.IO) {
+            service.getProductDetails(productId).run {
+                ProductDetails(
+                    this.title,
+                    this.description,
+                    this.full_description,
+                    "TK ${this.price}",
+                    this.imageUrl,
+                    this.pros,
+                    this.cons
                 )
             }
         }

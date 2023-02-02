@@ -148,3 +148,4 @@ All notable changes to this project will be documented in this file.
 - feat(ProductRepository): create abstract getProductDetails suspend function
 - fix: resolve type mismatch on ProductDetailsViewState
 - feat(ProductService): add getProductDetails service
+- feat(ProductRepositoryAPI): add getProductDetails function to retrieve ProductDetails
