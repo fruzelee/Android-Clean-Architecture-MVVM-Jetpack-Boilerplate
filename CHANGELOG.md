@@ -153,6 +153,12 @@ All notable changes to this project will be documented in this file.
 - feat(ProductDetailsFragment): implement observable pattern to update UI
 - fix(imports): optimize imports to resolve Unresolved reference: ProductListFragmentDirections
 - 
-- chore(structure): move ProductRepository to repository under data layer of shared feature for better organization and maintainability
-- chore(structure): move ApiClient to api directory under repository of data layer for better organization and maintainability
-- chore(structure): move ProductRepositoryAPI to api directory under repository of data layer for better organization and maintainability
+- chore(structure): move ProductRepository to repository under data layer of shared feature for
+  better organization and maintainability
+- chore(structure): move ApiClient to api directory under repository of data layer for better
+  organization and maintainability
+- chore(structure): move ProductRepositoryAPI to api directory under repository of data layer for
+  better organization and maintainability
+- chore(structure): move ProductService to api directory under repository of data layer for better
+  organization and maintainability and refactor related classes
+  

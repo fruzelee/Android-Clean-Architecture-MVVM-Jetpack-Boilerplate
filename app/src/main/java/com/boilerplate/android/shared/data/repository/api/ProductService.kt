@@ -1,4 +1,4 @@
-package com.boilerplate.android
+package com.boilerplate.android.shared.data.repository.api
 
 import com.boilerplate.android.product_details.data.ProductDetailsEntity
 import com.boilerplate.android.product_list.data.ProductEntity

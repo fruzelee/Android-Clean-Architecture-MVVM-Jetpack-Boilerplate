@@ -1,6 +1,5 @@
 package com.boilerplate.android.shared.data.repository.api
 
-import com.boilerplate.android.ProductService
 import com.boilerplate.android.product_details.business.ProductDetails
 import com.boilerplate.android.product_list.business.Product
 import com.boilerplate.android.shared.data.repository.ProductRepository
