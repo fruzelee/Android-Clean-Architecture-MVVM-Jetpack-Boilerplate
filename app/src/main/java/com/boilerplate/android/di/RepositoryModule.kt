@@ -1,7 +1,7 @@
 package com.boilerplate.android.di
 
 import com.boilerplate.android.ApiClient
-import com.boilerplate.android.ProductRepository
+import com.boilerplate.android.shared.data.repository.ProductRepository
 import com.boilerplate.android.ProductRepositoryAPI
 import com.boilerplate.android.ProductService
 import dagger.Module

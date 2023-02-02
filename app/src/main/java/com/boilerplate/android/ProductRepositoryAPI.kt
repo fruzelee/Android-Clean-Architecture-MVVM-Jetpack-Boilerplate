@@ -2,6 +2,7 @@ package com.boilerplate.android
 
 import com.boilerplate.android.product_details.business.ProductDetails
 import com.boilerplate.android.product_list.business.Product
+import com.boilerplate.android.shared.data.repository.ProductRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

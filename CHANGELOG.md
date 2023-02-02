@@ -152,3 +152,5 @@ All notable changes to this project will be documented in this file.
 - feat(fragment_product_details): add ProgressBar to display loading view
 - feat(ProductDetailsFragment): implement observable pattern to update UI
 - fix(imports): optimize imports to resolve Unresolved reference: ProductListFragmentDirections
+- 
+- chore(structure): move ProductRepository to repository under data layer of shared feature for better organization and maintainability
