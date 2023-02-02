@@ -1,5 +1,6 @@
-package com.boilerplate.android
+package com.boilerplate.android.shared.data.repository.api
 
+import com.boilerplate.android.ProductService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
