@@ -151,3 +151,4 @@ All notable changes to this project will be documented in this file.
 - feat(ProductRepositoryAPI): add getProductDetails function to retrieve ProductDetails
 - feat(fragment_product_details): add ProgressBar to display loading view
 - feat(ProductDetailsFragment): implement observable pattern to update UI
+- fix(imports): optimize imports to resolve Unresolved reference: ProductListFragmentDirections
