@@ -150,3 +150,4 @@ All notable changes to this project will be documented in this file.
 - feat(ProductService): add getProductDetails service
 - feat(ProductRepositoryAPI): add getProductDetails function to retrieve ProductDetails
 - feat(fragment_product_details): add ProgressBar to display loading view
+- feat(ProductDetailsFragment): implement observable pattern to update UI
