@@ -3,6 +3,7 @@ package com.boilerplate.android.product_list.presentation
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.boilerplate.android.R
 import com.boilerplate.android.databinding.ProductCardBinding
@@ -56,19 +57,36 @@ class ProductCardListAdapter(val onItemClicked: (ProductCardViewState) -> Unit) 
             bind.viewProductDescription.text = "Description of product"
             bind.productPrice.text = "100 US$"*/
 
-            //assign data via view state
-            bind.viewProductName.text = productCardViewState.title
-            bind.viewProductDescription.text = productCardViewState.description
-            bind.productPrice.text = productCardViewState.price
+            bind.apply {
+                //assign data via view state
+                viewProductName.text = productCardViewState.title
+                viewProductDescription.text = productCardViewState.description
+                productPrice.text = productCardViewState.price
+                viewWishlistIcon.setImageDrawable(
+                    if (productCardViewState.isFavorite) {
+                        ResourcesCompat.getDrawable(
+                            viewWishlistIcon.resources,
+                            R.drawable.baseline_favorite_24,
+                            null
+                        )
+                    } else {
+                        ResourcesCompat.getDrawable(
+                            viewWishlistIcon.resources,
+                            R.drawable.baseline_favorite_border_24,
+                            null
+                        )
+                    }
+                )
 
-            //showing product image via glide
-            Glide.with(bind.productImage)
-                .asBitmap()
-                .load(productCardViewState.imageUrl)
-                .into(BitmapImageViewTarget(bind.productImage))
+                //showing product image via glide
+                Glide.with(productImage)
+                    .asBitmap()
+                    .load(productCardViewState.imageUrl)
+                    .into(BitmapImageViewTarget(productImage))
+            }
+
+
         }
     }
 
 }
-
-
