@@ -26,7 +26,8 @@ class ProductListViewModel @Inject constructor(private val repository: ProductRe
                     it.title,
                     it.description,
                     "TK ${it.price}",
-                    it.imageUrl
+                    it.imageUrl,
+                    true
                 )
             }))
 
