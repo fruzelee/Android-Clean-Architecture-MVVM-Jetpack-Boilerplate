@@ -84,9 +84,6 @@ class ProductCardListAdapter(val onItemClicked: (ProductCardViewState) -> Unit) 
                     .load(productCardViewState.imageUrl)
                     .into(BitmapImageViewTarget(productImage))
             }
-
-
         }
     }
-
 }

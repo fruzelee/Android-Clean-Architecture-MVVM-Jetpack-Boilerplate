@@ -37,20 +37,19 @@ class ProductDetailsFragment : Fragment() {
 
         // using observable pattern to update the ui
         viewModel.loadProduct("someProductId")
-        viewModel.viewState.observe(viewLifecycleOwner){
+        viewModel.viewState.observe(viewLifecycleOwner) {
             updateUi(it)
         }
     }
 
     private fun updateUi(viewState: ProductDetailsViewState) {
-        when(viewState){
+        when (viewState) {
             is ProductDetailsViewState.Content -> {
-                with(binding){
+                with(binding) {
                     binding.loadingView.isVisible = false
                     val product = viewState.product
                     viewProductTitle.text = product.title
-                    Glide.with(requireContext()).
-                    load(product.imageUrl)
+                    Glide.with(requireContext()).load(product.imageUrl)
                         .into(viewProductImage)
                     binding.viewPrice.text = product.price
                     binding.viewFullDescription.text = product.fullDescription
