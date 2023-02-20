@@ -52,7 +52,7 @@ All notable changes to this project will be documented in this file.
 - refactor: reformat the product card view state data class
 - docs: update changelog with recent changes
 - docs: update the progress summary in the readme file
-- 
+-
 - chore: add the necessary dependencies for the glide module
 - feat: add new parameter imageUrl for ProductCardViewState data class
 - feat: update ProductCardViewState mapping on ProductRepository
@@ -61,7 +61,7 @@ All notable changes to this project will be documented in this file.
 - feat: add necessary uses-permissions into the manifest
 - feat: update the price value on product repository mapping
 - docs: update changelog with recent changes
-- 
+-
 - docs: update the progress summary in the readme file
 - fix: create an interface & make sure that our view model is using interface rather than concrete
   class to comply with the DIP of SOLID principles
@@ -70,7 +70,7 @@ All notable changes to this project will be documented in this file.
 - feat: view model is depending on abstraction instead of concretions
 - feat: view model is depending in interface which is implemented by ProductRepositoryAPI
 - docs: update changelog with recent changes
-- 
+-
 - docs: update the progress summary in the readme file
 - chore: import hilt dependencies which provides a standard way to incorporate Dagger dependency
   injection into an Android application
@@ -89,14 +89,14 @@ All notable changes to this project will be documented in this file.
 - feat: use our application in our android manifest otherwise our application won't work
 - feat: ApiClient services use as companion object
 - docs: update changelog with recent changes
-- 
+-
 - docs: update the progress summary in the readme file
 - chore(gradle): add kotlin extensions for 'fragment' artifact
 - chore(gradle): add kotlin extensions for 'Navigation Component' artifact
 - chore(gradle): add kotlin extensions for Android Navigation Fragment Hilt Extension
 - feat: add new product list module
 - BREAKING CHANGE: add new module product list
-- 
+-
 - docs: update the progress summary in the readme file
 - feat: add nav_graph under navigation
 - feat: add FragmentContainerView on main activity layout
@@ -119,7 +119,7 @@ All notable changes to this project will be documented in this file.
 - feat: update .gitignore
 - docs: update changelog with recent changes
 - feat: update strings
-- 
+-
 - docs: update the progress summary in the README file
 - Chore: Upgrade AGP dependency from 7.3.1 to 7.4.0, Gradle version to 7.5
 - BREAKING CHANGE: upgrade the Android Gradle Plugin to take advantage of latest features,
@@ -138,7 +138,7 @@ All notable changes to this project will be documented in this file.
 - feat(view-model): map productList to support ProductCardViewState on ProductListViewModel and
   enhance to support it through mapping of productList
 - doc: update CHANGELOG.md
-- 
+-
 - feat(ProductDetails): move ProductDetailsFragment to presentation layer for better organization
   and maintainability
 - feat(ProductDetails): add ProductDetails data class under business layer
@@ -152,7 +152,7 @@ All notable changes to this project will be documented in this file.
 - feat(fragment_product_details): add ProgressBar to display loading view
 - feat(ProductDetailsFragment): implement observable pattern to update UI
 - fix(imports): optimize imports to resolve Unresolved reference: ProductListFragmentDirections
-- 
+-
 - chore(structure): move ProductRepository to repository under data layer of shared feature for
   better organization and maintainability
 - chore(structure): move ApiClient to api directory under repository of data layer for better
@@ -163,12 +163,89 @@ All notable changes to this project will be documented in this file.
   organization and maintainability and refactor related classes
 - chore(structure): move MainActivity to presentation layer under shared feature, refactor related
   classes and dependencies imports for better organization and maintainability
-- 
+-
 - chore(build): upgrade AGP dependency from 7.4.0 to 7.4.1 and sync project successfully
 
   This commit updates the Android Gradle Plugin dependency from 7.4.0 to 7.4.1 to take advantage of
   the latest features, improvements, and security fixes. The upgrade steps have been successfully
   executed, and the project has been synced with the IDE.
+-
+- docs: update README.md
+-
+- feat(wishlist): modify product list item to include wishlist feature
+- feat(ProductCardViewState): Add "isFavorite" field to track product status in the productList
+- feat(ProductCardListAdapter): implement update of favorite icon based on the ProductCardViewState
+- fix: the places where the ProductCardViewState was being used
+-
+
+[//]: # (- feat&#40;wishlist&#41;: add the WishListRepository as the way that we communicate from the view model to)
+
+[//]: # (  access data is by using a repository. According to the dependency inversion principle, our view)
+
+[//]: # (  model should rely on an interface, on an abstraction rather than a concretion.)
+
+- feat(WishListRepository): implement the WishListRepository as a means of communication between the
+  view model and the data access layer. Adhere to the dependency inversion principle by relying on
+  an interface instead of a concrete implementation.
+
+[//]: # (- feat: add a new class WishlistDatabaseRepository to implement of the WishListRepository interface)
+
+[//]: # (- feat: use WishlistRepository to the ProductListViewModel)
+
+[//]: # (- feat: when creating the view state instead of passing static boolean now passing the wishlist)
+
+[//]: # (  repository)
+
+[//]: # (- feat: add productId to our product_list domain)
+
+[//]: # (- feat: add productId to our repository api)
+
+[//]: # (- feat: add productId on the ProductEntity as this is the object that is actually mapping the JSON response and retrofit is using it)
+
+- feat: add implementation of WishListRepository to WishlistDatabaseRepository
+- feat: inject WishlistRepository via constructor in ProductListViewModel
+- feat: update view state creation in ProductListViewModel to use WishlistRepository
+
+[//]: # (- feat: use WishlistRepository in ProductListViewModel)
+
+[//]: # (- feat: pass wishlist repository to create view state)
+
+- feat: add productId field to product_list domain layer
+- feat: add productId field to shared repository API layer
+- fix: include productId in ProductEntity for proper JSON mapping by Retrofit
+- chore(repo): provide WishlistRepository to RepositoryModule
+- refactor: rename the WishlistRepository
+-
+
+[//]: # (- BREAKING CHANGE: cover the wishlist boilerplate - presentation & domain layer)
+
+[//]: # ()
+
+[//]: # (  Implement basically the presentation layer.)
+
+[//]: # (  Add the wishlist icon in the adapter with functionality.)
+
+[//]: # (  We made our view model to change the view state, because we use the view state to describe the UI.)
+
+[//]: # (  If a product is or isn't in the wishlist, it should be in the view state. We're getting the data,)
+
+[//]: # (  if the product is or isn't in a wishlist from wishlist repository.)
+
+[//]: # ()
+
+[//]: # (- docs: update CHANGELOG with recent commits)
+
+- feat(wishlist): add presentation and domain layer
+
+- BREAKING CHANGE: This commit modifies the wishlist boilerplate by adding the presentation and
+  domain layer. The presentation layer has been implemented with the addition of the wishlist icon
+  in the adapter with functionality. The view model has also been updated to change the view state
+  and describe the UI. The view state will now include information on whether a product is or isn't
+  in the wishlist, which is obtained from the wishlist repository.
+
+- docs: update CHANGELOG with recent commits
+
+rewrite this commit according to the conventional commits standard:
 
 
-  
+
