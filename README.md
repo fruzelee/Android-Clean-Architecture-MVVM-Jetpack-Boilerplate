@@ -28,11 +28,14 @@
 - solid principles (DIP)
 - dependency injection (DI) with hilt
 - product list module
-
-# Last Update
 - product details module
 - navigation component
 - navigation safeargs
 
-# Ongoing:
+# Last Update
 - organizing the codebase
+
+# Ongoing:
+- wishlist boilerplate - presentation layer
+- wishlist boilerplate - domain layer
+
