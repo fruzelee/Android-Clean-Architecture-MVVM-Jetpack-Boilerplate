@@ -4,6 +4,8 @@ import com.boilerplate.android.shared.data.repository.api.ApiClient
 import com.boilerplate.android.shared.data.repository.ProductRepository
 import com.boilerplate.android.shared.data.repository.api.ProductRepositoryAPI
 import com.boilerplate.android.shared.data.repository.api.ProductService
+import com.boilerplate.android.wishlist.data.repository.WishlistDatabaseRepository
+import com.boilerplate.android.wishlist.data.repository.WishlistRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -23,4 +25,9 @@ class RepositoryModule {
     @Provides
     fun providesProductRepository(productRepositoryAPI: ProductRepositoryAPI):
             ProductRepository = productRepositoryAPI
+
+    @Provides
+    fun providesWishlistRepository(
+        databaseRepository: WishlistDatabaseRepository
+    ): WishlistRepository = databaseRepository
 }
