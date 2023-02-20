@@ -1,6 +1,6 @@
 package com.boilerplate.android.wishlist.data.repository
 
-interface WishListRepository {
+interface WishlistRepository {
 
     fun isFavourite(productId: String): Boolean
     fun addToWishList(productId: String)
