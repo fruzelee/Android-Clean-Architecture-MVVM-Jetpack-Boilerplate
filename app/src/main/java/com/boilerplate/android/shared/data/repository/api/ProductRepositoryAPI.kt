@@ -28,7 +28,8 @@ class ProductRepositoryAPI @Inject constructor(private val service: ProductServi
                     it.description,
 //                    "TK ${it.price * 104.59}", //1 US Dollar = 104.59 Taka Dec 19, 2:01AM UTC
                     it.price * 104.59, //1 US Dollar = 104.59 Taka Dec 19, 2:01AM UTC
-                    it.imageUrl
+                    it.imageUrl,
+                    it.id
                 )
             }
         }
