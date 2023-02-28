@@ -26,6 +26,7 @@ class ProductListViewModel @Inject constructor(
             val productList = repository.getProductList()
             _viewState.postValue(ProductListViewState.Content(productList.map {
                 ProductCardViewState(
+                    it.productId,
                     it.title,
                     it.description,
                     "TK ${it.price}",

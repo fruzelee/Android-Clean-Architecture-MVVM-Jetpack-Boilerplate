@@ -1,5 +1,6 @@
 package com.boilerplate.android.product_list.presentation
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +11,7 @@ import com.boilerplate.android.databinding.ProductCardBinding
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.BitmapImageViewTarget
 
-class ProductCardListAdapter(val onItemClicked: (ProductCardViewState) -> Unit) :
+class ProductCardListAdapter(private val context: Context?, val onItemClicked: (ProductCardViewState) -> Unit) :
     RecyclerView.Adapter<ProductCardListAdapter.ViewHolder>() {
 
     private var data: List<ProductCardViewState> = emptyList()
@@ -58,6 +59,10 @@ class ProductCardListAdapter(val onItemClicked: (ProductCardViewState) -> Unit) 
             bind.productPrice.text = "100 US$"*/
 
             bind.apply {
+
+                //test
+                //Toast.makeText(context, "id: "+ productCardViewState.id, Toast.LENGTH_SHORT).show()
+
                 //assign data via view state
                 viewProductName.text = productCardViewState.title
                 viewProductDescription.text = productCardViewState.description

@@ -9,7 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.boilerplate.android.R
 import com.boilerplate.android.databinding.FragmentProductListBinding
+import com.boilerplate.android.shared.utils.BundleKeys
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -17,7 +19,7 @@ class ProductListFragment : Fragment() {
 
     private lateinit var binding: FragmentProductListBinding
     private val viewModel: ProductListViewModel by viewModels()
-    private val adapter = ProductCardListAdapter(::onItemClicked)
+    private val adapter = ProductCardListAdapter(context, ::onItemClicked)
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -63,6 +65,15 @@ class ProductListFragment : Fragment() {
     }
 
     private fun onItemClicked(viewState: ProductCardViewState) {
-        findNavController().navigate(ProductListFragmentDirections.actionProductListFragmentToProductDetailsFragment())
+
+        //val bundle = bundleOf("productId" to viewState.id)
+
+        val bundle = Bundle()
+        //arguments?.let { bundle.putInt(Constant.CATEGORY_ID, it.getInt(Constant.CATEGORY_ID)) }
+        bundle.putString(BundleKeys.productId, viewState.id)
+
+
+//        findNavController().navigate(ProductListFragmentDirections.actionProductListFragmentToProductDetailsFragment())
+        findNavController().navigate(R.id.action_productListFragment_to_ProductDetailsFragment, bundle)
     }
 }

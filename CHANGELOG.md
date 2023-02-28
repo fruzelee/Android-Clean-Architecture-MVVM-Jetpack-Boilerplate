@@ -247,5 +247,10 @@ All notable changes to this project will be documented in this file.
 
 rewrite this commit according to the conventional commits standard:
 
+- feat: Resolve crash issue in product list click event
+
+This commit addresses a crash issue that occurs when navigating from the product list to the product
+details page. The fix ensures a smooth transition without any crashes.
+
 
 
