@@ -215,25 +215,6 @@ All notable changes to this project will be documented in this file.
 - fix: include productId in ProductEntity for proper JSON mapping by Retrofit
 - chore(repo): provide WishlistRepository to RepositoryModule
 - refactor: rename the WishlistRepository
--
-
-[//]: # (- BREAKING CHANGE: cover the wishlist boilerplate - presentation & domain layer)
-
-[//]: # ()
-
-[//]: # (  Implement basically the presentation layer.)
-
-[//]: # (  Add the wishlist icon in the adapter with functionality.)
-
-[//]: # (  We made our view model to change the view state, because we use the view state to describe the UI.)
-
-[//]: # (  If a product is or isn't in the wishlist, it should be in the view state. We're getting the data,)
-
-[//]: # (  if the product is or isn't in a wishlist from wishlist repository.)
-
-[//]: # ()
-
-[//]: # (- docs: update CHANGELOG with recent commits)
 
 - feat(wishlist): add presentation and domain layer
 
