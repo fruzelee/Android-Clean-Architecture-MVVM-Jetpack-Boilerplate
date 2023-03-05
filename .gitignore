@@ -186,3 +186,4 @@ hs_err_pid*
 ### Custom template
 .idea/render.experimental.xml
 .idea/deploymentTargetDropDown.xml
+.idea/graphql-settings.xml

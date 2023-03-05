@@ -238,5 +238,5 @@ details page. The fix ensures a smooth transition without any crashes.
 The Android Gradle Plugin (AGP) version in the project has been updated from 7.4.1 to 7.4.2 to take
 advantage of the latest features, improvements, and security fixes.
 
-
+- refactor: update .gitignore file
 
