@@ -233,5 +233,10 @@ rewrite this commit according to the conventional commits standard:
 This commit addresses a crash issue that occurs when navigating from the product list to the product
 details page. The fix ensures a smooth transition without any crashes.
 
+- feat(build): upgrade Android Gradle Plugin to 7.4.2
+
+The Android Gradle Plugin (AGP) version in the project has been updated from 7.4.1 to 7.4.2 to take
+advantage of the latest features, improvements, and security fixes.
+
 
 
