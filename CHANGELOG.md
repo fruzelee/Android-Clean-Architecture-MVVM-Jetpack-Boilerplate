@@ -243,4 +243,4 @@ advantage of the latest features, improvements, and security fixes.
 - feat: add the apollo plugin to our project level build.gradle file
 - feat: add the apollo runtime dependency on app level build.gradle file
 - feat: add apollo service dependency on app level build.gradle file
-
+- feat: add the schema.json file
