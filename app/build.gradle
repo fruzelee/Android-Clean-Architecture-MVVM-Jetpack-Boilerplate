@@ -20,6 +20,12 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
+    // In order to show the graphql folder when we are in "Android" mode inside the Android Studio
+    sourceSets {
+        main.java.srcDirs += 'src/main/graphql'
+    }
+
     android {
         viewBinding.enable = true
     }

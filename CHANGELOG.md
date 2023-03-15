@@ -244,3 +244,8 @@ advantage of the latest features, improvements, and security fixes.
 - feat: add the apollo runtime dependency on app level build.gradle file
 - feat: add apollo service dependency on app level build.gradle file
 - feat: add the schema.json file
+- feat(android): add graphql source directory
+
+This commit adds the graphql folder to the Android Studio project. It ensures that the graphql
+directory is visible when the project is in "Android" mode, making it easier to access and work with
+GraphQL files in the Android project.
