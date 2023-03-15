@@ -4,6 +4,7 @@ plugins {
     id 'kotlin-kapt'
     id 'com.google.dagger.hilt.android'
     id 'androidx.navigation.safeargs.kotlin'
+    id("com.apollographql.apollo3").version("3.7.4")
 }
 
 android {
@@ -87,6 +88,15 @@ dependencies {
     // https://mvnrepository.com/artifact/androidx.hilt/hilt-navigation-fragment
     implementation("androidx.hilt:hilt-navigation-fragment:1.0.0")
 
+    //Apollo Kotlin (formerly known as Apollo Android) is a GraphQL client that generates Kotlin and Java models from GraphQL queries.
+    implementation("com.apollographql.apollo3:apollo-runtime:3.7.4")
+
+}
+
+apollo {
+    service("service") {
+        packageName.set("com.boilerplate.android")
+    }
 }
 
 // Allow references to generated code
