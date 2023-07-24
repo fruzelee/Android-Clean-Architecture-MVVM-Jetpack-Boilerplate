@@ -252,3 +252,4 @@ GraphQL files in the Android project.
 
 - feat: Add GetProductsQuery for retrieving Products through GraphQL
 - feat: Add AplClient to api repository package in shared data
+- feat: Add apolloClient to api repository package in shared data
