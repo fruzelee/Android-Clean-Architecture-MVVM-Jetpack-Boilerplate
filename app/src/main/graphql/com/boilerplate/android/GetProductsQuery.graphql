@@ -1,0 +1,123 @@
+query GetProductsQuery{
+    getProducts(
+        pagination: {
+            skip: 0
+            limit: 10
+        }
+        filter: {
+            #uid: "P-DTMMC7"
+            #	sellerUid: "S-X5VQHF"
+
+
+        }
+    )
+    {
+        message
+        statusCode
+        result {
+            count
+            products {
+                uid
+                enName
+                bnName
+                videoUrl
+                images {
+                    name
+                    url
+                    signedUrl
+                }
+                category{
+                    bnName
+                    enName
+                    uid
+                }
+                seller {
+                    uid
+                    enName
+                    bnName
+                }
+                productAttributes{
+                    uid
+                    enLabel
+                    bnLabel
+                    inputType
+                    isRequired
+                    isSearchAble
+                    queryName
+                    values {
+                        enName
+                        bnName
+                    }
+                }
+                detailedDescriptions {
+                    uid
+                    enLabel
+                    bnLabel
+                    inputType
+                    isRequired
+                    isSearchAble
+                    queryName
+                    values {
+                        enName
+                        bnName
+                    }
+                }
+                priceAndStocks {
+                    uid
+                    enLabel
+                    bnLabel
+                    inputType
+                    isRequired
+                    isSearchAble
+                    queryName
+                    values {
+                        enName
+                        bnName
+                    }
+                }
+                serviceAndDeliveries {
+                    uid
+                    enLabel
+                    bnLabel
+                    inputType
+                    isRequired
+                    isSearchAble
+                    values {
+                        enName
+                        bnName
+                    }
+                }
+                deliveries {
+                    uid
+                    enLabel
+                    bnLabel
+                    inputType
+                    isRequired
+                    isSearchAble
+                    values {
+                        enName
+                        bnName
+                    }
+                }
+                variants {
+                    colorFamily
+                    size
+                    mrpPrice
+                    quantity
+                    isAvailable
+                    sellerSKU
+
+                    images {
+                        name
+                        url
+                        signedUrl
+                    }
+                }
+                isActive
+                inActiveNote
+                createdAt
+                updatedAt
+            }
+        }
+    }
+}
