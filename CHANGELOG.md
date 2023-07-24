@@ -251,3 +251,4 @@ directory is visible when the project is in "Android" mode, making it easier to 
 GraphQL files in the Android project.
 
 - feat: Add GetProductsQuery for retrieving Products through GraphQL
+- feat: Add AplClient to api repository package in shared data
